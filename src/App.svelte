@@ -1,22 +1,21 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+  import FeedbackList from './lib/components/FeedbackList.svelte';
 
   const feedback = [
     {
       id:1,
       rating: 10,
-      text: 'this feedback has recommendation of 10'
+      text: 'this feedback has recommendation of'
     },
     {
       id:2,
       rating: 9,
-      text: 'this feedback has recommendation of 9'
+      text: 'this feedback has recommendation of'
     },
     {
       id:3,
       rating: 8,
-      text: 'this feedback has recommendation of 8'
+      text: 'this feedback has recommendation of'
     }
   ];
 </script>
@@ -25,9 +24,9 @@
   
   <h1>Vite + Svelte</h1>
 
-  <div class="card">
-    <Counter />
-  </div>
+  
+  <FeedbackList {feedback}/>
+  
 
  
 </main>
