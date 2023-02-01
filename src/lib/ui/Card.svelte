@@ -3,9 +3,9 @@
 </div>
 <style>
     .card {
-        background-color: purple;
+        background-color: #334155;
         color: white;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         padding: 1.5em 3em;
         margin: 1rem 0;
         position: relative;
