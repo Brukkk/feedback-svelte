@@ -1,8 +1,11 @@
 <script>
+    import { createEventDispatcher } from "svelte";
     import Card from "../ui/Card.svelte";
-    export let fb = {};
+    export let fb;
+
+    const dispatch = createEventDispatcher();
     const handleDelete = (itemId) => {
-        console.log(itemId);
+        dispatch('feedback-delete', itemId);
     }
 
 </script>

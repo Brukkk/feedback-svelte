@@ -5,5 +5,5 @@
 </script>
 
 {#each feedback as fb( fb.id )}
-    <FeedbackItem {fb} />
+    <FeedbackItem {fb} on:feedback-delete />
 {/each}
